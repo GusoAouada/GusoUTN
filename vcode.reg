@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+ 
+[HKEY_CLASSES_ROOT \ * \ shell \ VSCode]; el menú que aparece cuando hace clic derecho en el archivo
+ @ = "Editar con código de Visual Studio"; texto mostrado
+ "Icon" = "C:\\Users\\A308945\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"; icono mostrado
+ 
+ [HKEY_CLASSES_ROOT \ * \ shell \ VSCode \ command]; Comando a ejecutar
+ @ = "\" C:\\Users\\A308945\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe \ "\"% 1 \ ""; El código de comando específico,% 1 representa el primer parámetro, que es la ruta del archivo seleccionado haciendo clic derecho
+ 
+Windows Registry Editor Version 5.00
+ 
+ [HKEY_CLASSES_ROOT \ Directory \ shell \ VSCode]; el menú que aparece cuando hace clic derecho en la carpeta
+@="Open with Visual Studio Code"
+"Icon"="C:\\Users\\A308945\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+ 
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
+ @ = "\" C:\\Users\\A308945\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe \ "\"% V \ "";% V significa lo mismo que% 1, excepto que se reemplaza con la ruta de trabajo actual cuando la ruta está vacía

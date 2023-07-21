@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>mi página</h2>
+        <nav>
+            <a href="./index.html">Producto</a>
+            <a href="">Servicio</a>
+            <a href="">Contacto</a>
+    </nav>
+    </header>
+
+    <main>
+        <h1>Completa el siguiente formulario de contacto</h1>
+        <form>
+            <div>
+                <label for="nombre">Ingrese su nombre:</label>
+                <input type="text" placeholder="Cosme Fulanito" id="nombre" minlength="3" maxlength="30">
+            </div>
+            <div>
+                <label for="email">Ingrese su email:</label>
+                <input type="email" placeholder="cosme.fulanito@gmail.com" id="email">
+            </div>
+            <div>
+                <label for="pass">Ingrese su contraseña:</label>
+                <input type="password" id="pass" required>
+            </div>
+            <div>
+                <label for="edad">Ingrese su edad:</label>
+                <input type="number" min="18" max="150" id="edad">
+            </div>
+            <div>
+                <label for="nacim">Ingrese su fecha de nacimiento:</label>
+                <input type="date" id="nacim">
+            </div>
+            <div>
+                <label for="colorCasa">Ingrese el color de su casa:</label>
+                <input type="color" id="colorCasa">
+            </div>
+            <div>
+                <input type="checkbox" id="acuerdo">
+                <label for="acuerdo">Estoy de acuerdo</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+</body>
+</html>

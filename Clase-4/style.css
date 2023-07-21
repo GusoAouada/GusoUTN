@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html{
+    font-size: 20px;
+    /* margin: 0px; */
+}
+
+header{
+    background-color: black;
+    padding: 2vh 5vw;
+}
+
+header h2{
+    color: white;
+    display: inline-block;
+}
+
+header nav{
+    display: inline-block;
+    margin-left: 50%;
+}
+
+header nav a{
+    color: white;
+}
+.rem{
+    font-size: 3rem;
+}
+.parrafoContainer{
+    width: 50vw;
+    height: 50vh;
+    font-size: 15px;
+    background-color: green;
+}
+
+.parrafo:nth-child(1){
+    font-size: 200%;
+    border: 10px solid lightblue;
+}
+
+.parrafo:nth-child(2){
+    font-size: 2em;
+}
+
+.xxs{font-size: xx-small;}
+.xs{font-size: x-small;}
+.sr{font-size: smaller;}
+.s{font-size: small;}
+.m{font-size: medium;}
+.l{font-size: large;}
+.lr{font-size: larger;}
+.xl{font-size: x-large;}
+.xxl{font-size: xx-large;}
+
+
+
+
+
+.padre{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 200px 0;
+    border: 1px black solid;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    margin: 0 auto;
+    box-shadow: -10px -10px 5px black,
+                -15px -15px 15px 10px grey;
+}
+
+.caja:hover{
+    transition: 1s ease-out;
+    box-shadow: 10px 10px 10px 2px black;
+}

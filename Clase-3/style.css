@@ -1,0 +1,46 @@
+/* Comentario CSS */
+/* CSS: Cascade Style Sheet */
+
+html{
+    background-color: black;
+    color: white; 
+}
+
+h1{
+    background-color: blue;
+    color: yellow;
+    width: 50%;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    margin-bottom: 50px;
+}
+
+a{
+    color: aqua;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.contenedor{
+    width: 400px;
+    height: 200px;
+    background-color: magenta;
+    border-radius: 10px;
+    color: pink;
+}
+.contenedor h2{
+    color: grey;
+}
+
+#Titulo_especial{
+    color: lightgreen;
+    font-size:larger;
+}
+
+h2{
+    color: black;
+}

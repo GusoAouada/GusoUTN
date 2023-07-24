@@ -6,6 +6,16 @@
     font-family: sans-serif;
 }
 
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 70px auto;
+    grid-template-areas: 
+    'navbar navbar navbar'
+    'navbarLeft main contentRight';
+    column-gap: 10px;
+    row-gap: 10px;
+}
 
 header{
     display: flex;
@@ -15,6 +25,7 @@ header{
     border: 2px solid;
     padding: 0 3vw;
     background-color: darkcyan;
+    grid-area: navbar;
 }
 
 header .brand-navbar{
@@ -57,13 +68,31 @@ nav a{
     font-weight: 700;
 }
 
+
+/* Barra navegación izquierda */
+
+.navbarLeft{
+    grid-area: navbarLeft;
+}
+
+/* Sector contenido derecha */
+
+.contentRight{
+    grid-area: contentRight;
+}
+
+
 /* Sección Coloers */
 
-section{
+.section{
+    grid-area: main;
+    align-self: center;
+    width: 60vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 3vh 0;
+    justify-content: space-between;
+    /* padding: 3vh 0; */
+    column-gap: 5px;
 }
 
 .cajaColores{

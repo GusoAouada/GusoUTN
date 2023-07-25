@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.padre{
+    height: 100vh;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.hijo{
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+
+}
+
+
+.hijo:nth-child(1){
+    background-color: lightblue;
+    position: relative;
+    left: 275px;
+    z-index: 2;
+}
+
+.hijo:nth-child(2){
+    background-color: blue;
+    position: relative;
+    z-index: 3;
+}
+
+.hijo:nth-child(3){
+    background-color: darkblue;
+    position: relative;
+    right: 200px;
+    z-index: 1;
+}

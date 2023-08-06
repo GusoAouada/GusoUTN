@@ -1,0 +1,60 @@
+:root{
+    --color-principal: hsl(12, 88%, 54%);
+    --margin-especial: 10rem;
+}
+
+@keyframes izq-a-der {
+    0%{
+        /* transform: translate(-1000px); */
+        font-size: 1px;
+    }
+    100%{
+        /* transform: translate(0px); */
+        font-size: 2.5rem;
+    }
+}
+
+
+
+h1{
+    /* animation: izq-a-der 3s; */
+}
+.btn{
+    padding: 15px 15px;
+}
+
+.btn-danger{
+    background-color: var(--color-principal);
+}
+
+
+.section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes spinner {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.spinner{
+    width: 50px;
+    height: 50px;
+    /* background-color: black; */
+    border-radius: 50%;
+    border-right: 3px solid red;
+    border-left: 3px solid blue;
+    animation: spinner;
+    animation-duration: 0.5s;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    font-size: 50px;
+    text-align: center;
+    text
+}   
+

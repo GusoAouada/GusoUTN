@@ -17,7 +17,7 @@
 
 
 h1{
-    /* animation: izq-a-der 3s; */
+    animation: izq-a-der 3s;
 }
 .btn{
     padding: 15px 15px;
@@ -55,6 +55,5 @@ h1{
     animation-timing-function: linear;
     font-size: 50px;
     text-align: center;
-    text
 }   
 
